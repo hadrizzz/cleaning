@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pristine Cleaning Co. | Premium Toronto &amp; GTA Cleaning Services</title>
+  <meta
+    name="description"
+    content="Premium home, move-out, office, and post-construction cleaning across Toronto, North York, Etobicoke, Scarborough, and the GTA. Free estimates. Same-day and next-day availability."
+  >
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#082544",
+            ocean: "#0f3a63",
+            marine: "#1d5c86",
+            sky: "#7fb5c8",
+            mist: "#eef5f8",
+            wash: "#e4edf2",
+            paper: "#fbfdff",
+            cloud: "#d7e4eb",
+            mint: "#dff4e7",
+            slate: "#5b6c7d"
+          },
+          fontFamily: {
+            display: ["Manrope", "sans-serif"],
+            sans: ["Instrument Sans", "sans-serif"]
+          },
+          boxShadow: {
+            soft: "0 18px 60px rgba(8, 37, 68, 0.10)",
+            float: "0 28px 90px rgba(8, 37, 68, 0.14)"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap"
+    rel="stylesheet"
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1"
+    rel="stylesheet"
+  >
+  <style>
+    body {
+      background: #fbfdff;
+      color: #082544;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+      vertical-align: middle;
+    }
+
+    .eyebrow {
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+
+    .section-pad {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .field {
+      width: 100%;
+      border: 0;
+      border-radius: 1.125rem;
+      background: rgba(228, 237, 242, 0.88);
+      padding: 0.95rem 1rem;
+      color: #082544;
+      transition: background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .field::placeholder {
+      color: rgba(8, 37, 68, 0.55);
+    }
+
+    .field:focus {
+      outline: none;
+      background: #ffffff;
+      box-shadow: 0 0 0 2px rgba(127, 181, 200, 0.55);
+      transform: translateY(-1px);
+    }
+
+    .field-dark {
+      background: rgba(255, 255, 255, 0.11);
+      color: #ffffff;
+    }
+
+    .field-dark::placeholder {
+      color: rgba(255, 255, 255, 0.62);
+    }
+
+    .field-dark:focus {
+      background: rgba(255, 255, 255, 0.16);
+      box-shadow: 0 0 0 2px rgba(223, 244, 231, 0.48);
+    }
+
+    .hero-copy > * {
+      opacity: 0;
+      transform: translateY(24px);
+      animation: hero-rise 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    }
+
+    .hero-copy > *:nth-child(1) { animation-delay: 0.08s; }
+    .hero-copy > *:nth-child(2) { animation-delay: 0.18s; }
+    .hero-copy > *:nth-child(3) { animation-delay: 0.28s; }
+    .hero-copy > *:nth-child(4) { animation-delay: 0.38s; }
+    .hero-copy > *:nth-child(5) { animation-delay: 0.48s; }
+    .hero-copy > *:nth-child(6) { animation-delay: 0.58s; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+      transition-delay: var(--delay, 0ms);
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .chip input:checked + span {
+      background: #dff4e7;
+      color: #082544;
+      box-shadow: inset 0 0 0 1px rgba(8, 37, 68, 0.08);
+    }
+
+    .map-grid {
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    [data-scrolled="true"] {
+      background: rgba(251, 253, 255, 0.9);
+      box-shadow: 0 16px 50px rgba(8, 37, 68, 0.08);
+    }
+
+    @keyframes hero-rise {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .section-pad {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .hero-copy > *,
+      .reveal {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-marine/20 selection:text-ink">
+  <header
+    id="site-header"
+    class="fixed inset-x-0 top-0 z-50 transition-all duration-300"
+  >
+    <div class="section-pad">
+      <div class="mx-auto flex max-w-7xl items-center justify-between rounded-b-[1.35rem] px-4 py-4 md:px-6">
+        <a href="#top" class="font-display text-lg font-extrabold tracking-[-0.04em] text-ink md:text-xl">
+          Pristine Cleaning Co.
+        </a>
+        <nav class="hidden items-center gap-7 text-sm font-medium text-slate md:flex">
+          <a href="#services" class="transition-colors hover:text-ink">Services</a>
+          <a href="#pricing" class="transition-colors hover:text-ink">Pricing</a>
+          <a href="#calculator" class="transition-colors hover:text-ink">Calculator</a>
+          <a href="#areas" class="transition-colors hover:text-ink">Areas</a>
+          <a href="#reviews" class="transition-colors hover:text-ink">Reviews</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a
+            href="tel:4165550123"
+            class="hidden rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-ink shadow-soft md:inline-flex"
+          >
+            Call or Text (416) 555-0123
+          </a>
+          <a
+            href="#lead-form"
+            class="inline-flex items-center rounded-full bg-ink px-4 py-2 text-sm font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            Free Estimate
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="overflow-x-hidden pb-24 md:pb-0">
+    <section id="top" class="relative overflow-hidden bg-ink pt-24 text-white">
+      <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(127,181,200,0.28),_transparent_40%),radial-gradient(circle_at_bottom_right,_rgba(223,244,231,0.18),_transparent_28%)]"></div>
+        <div class="absolute inset-y-0 right-0 hidden w-[52%] lg:block">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzo10N6lVNCEfZGe1Y8dQgYji6oVhHiai2mx99axj4Vdr_dpH34qExxdIyXMrb7P_coyA5vO8Yp_puFSqatQsDD-yTwyOBIjrg4kTY3jOivT0E6HqtKYBv9KMRvEWrTrIc5wps8WSzdTW-5kZuW-O0dXAQD8aIuOzPSdotuwsihznV6PyqziYFbx9wOEC1K3tmAJtyEWRh7LltTnevkgFgs7u8YnL-58bfOnxouap2nMksLCauOQxAc80N-3n2bcOMzl9opJBIz44"
+            alt="Bright, professionally cleaned Toronto condo interior with polished flooring and soft daylight"
+            class="h-full w-full object-cover opacity-90"
+          >
+          <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/82 to-ink/16"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent"></div>
+        </div>
+      </div>
+      <div class="section-pad relative">
+        <div class="mx-auto grid min-h-[calc(100svh-6rem)] max-w-7xl items-center gap-14 py-10 lg:grid-cols-[0.95fr_0.62fr] lg:py-14">
+          <div class="hero-copy max-w-3xl">
+            <p class="eyebrow text-sky/90">Toronto &amp; GTA Cleaning Company</p>
+            <h1 class="font-display text-[clamp(3.25rem,8.5vw,7rem)] font-extrabold leading-[0.86] tracking-[-0.07em]">
+              Pristine Cleaning Co.
+            </h1>
+            <p class="max-w-2xl text-[clamp(1.3rem,2.8vw,2.2rem)] leading-tight text-white/88">
+              Reliable home, move-out, office, and post-construction cleaning with same-day and next-day availability.
+            </p>
+            <p class="max-w-xl text-base leading-7 text-white/72 md:text-lg">
+              Built for Toronto condos, North York homes, Etobicoke turnovers, Scarborough families, and GTA offices that need detail-first cleaning without chasing crews.
+            </p>
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a
+                href="#lead-form"
+                class="inline-flex items-center justify-center rounded-full bg-white px-7 py-4 text-sm font-semibold text-ink transition-transform duration-200 hover:-translate-y-0.5"
+              >
+                Get Your Free Estimate
+              </a>
+              <a
+                href="tel:4165550123"
+                class="inline-flex items-center justify-center rounded-full bg-white/10 px-7 py-4 text-sm font-semibold text-white ring-1 ring-white/20 backdrop-blur transition-colors duration-200 hover:bg-white/14"
+              >
+                Call or Text Now
+              </a>
+            </div>
+            <div class="grid gap-4 pt-4 text-sm text-white/70 sm:grid-cols-3">
+              <div class="rounded-[1.35rem] bg-white/8 px-4 py-4 backdrop-blur">
+                <p class="font-semibold text-white">From $120 regular clean</p>
+                <p class="mt-1">Clear starting rates and no vague pricing pages.</p>
+              </div>
+              <div class="rounded-[1.35rem] bg-white/8 px-4 py-4 backdrop-blur">
+                <p class="font-semibold text-white">Same-day / next-day slots</p>
+                <p class="mt-1">When route capacity allows, we move quickly.</p>
+              </div>
+              <div class="rounded-[1.35rem] bg-white/8 px-4 py-4 backdrop-blur">
+                <p class="font-semibold text-white">Toronto, North York, Etobicoke, Scarborough</p>
+                <p class="mt-1">GTA appointments available on request.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative hidden lg:block">
+            <div class="rounded-[2rem] bg-white/10 p-5 shadow-float backdrop-blur">
+              <div class="overflow-hidden rounded-[1.55rem]">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvuAUVgE7iJIXMZQMnd-Ol2Kl1t3lj4wQPnxIWd1_KHqCX6JY58S2juGoDWb-p5kfApmVyed-07KXf13Agn4Y32XNPMLQfCAZUHRS6i2rQGp632ZG2IUTLDjw3E0x08coVHk2ZSDfunCV-yPu33Z_cwCdTfgBpAxhzb2BhU27ULs45p2bnxm6DcEuE0UKqNUPdCJc0r1BAjsDqzszpLkreLoHaPMDgYr6Utzt8s0NMIB_e9GD2ETpjom-su8dHWc1ZxViN-4myUSc"
+                  alt="Professional cleaner standing in a high-end kitchen prepared for a Toronto home cleaning appointment"
+                  class="h-[34rem] w-full object-cover"
+                >
+              </div>
+              <div class="mt-4 flex items-center justify-between gap-4 rounded-[1.35rem] bg-white px-5 py-4 text-ink">
+                <div>
+                  <p class="eyebrow text-marine">Today's route</p>
+                  <p class="mt-2 font-display text-2xl font-bold tracking-[-0.04em]">Toronto core to North York</p>
+                </div>
+                <div class="text-right text-sm text-slate">
+                  <p class="font-semibold text-ink">Flexible arrival windows</p>
+                  <p class="mt-1">Homes, offices, and move-out turnovers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lead-form" class="section-pad relative -mt-8 pb-20 pt-10 md:-mt-16 md:pb-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-8 lg:grid-cols-[0.72fr_1.28fr]">
+          <div class="reveal space-y-6 lg:sticky lg:top-28 lg:self-start" style="--delay: 60ms;">
+            <p class="eyebrow text-marine">Estimate Desk</p>
+            <h2 class="font-display text-4xl font-extrabold leading-[0.95] tracking-[-0.05em] text-ink md:text-5xl">
+              A real quote flow, not a decorative form.
+            </h2>
+            <p class="max-w-md text-base leading-7 text-slate md:text-lg">
+              Use the calculator to get a credible starting estimate, then send the details once. The form captures the exact fields a local cleaning team actually needs to book.
+            </p>
+            <div class="rounded-[2rem] bg-mist p-6 shadow-soft">
+              <div class="space-y-4">
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <p class="text-sm font-semibold text-ink">Regular cleaning</p>
+                    <p class="text-sm text-slate">Ongoing upkeep for condos and family homes.</p>
+                  </div>
+                  <p class="font-display text-2xl font-extrabold tracking-[-0.04em] text-ink">from $120</p>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <p class="text-sm font-semibold text-ink">Deep cleaning</p>
+                    <p class="text-sm text-slate">Reset kitchens, bathrooms, floors, and baseboards.</p>
+                  </div>
+                  <p class="font-display text-2xl font-extrabold tracking-[-0.04em] text-ink">from $200</p>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <p class="text-sm font-semibold text-ink">Move in / move out</p>
+                    <p class="text-sm text-slate">Vacant-space detailing and turnover cleaning.</p>
+                  </div>
+                  <p class="font-display text-2xl font-extrabold tracking-[-0.04em] text-ink">from $250</p>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <p class="text-sm font-semibold text-ink">Hourly custom work</p>
+                    <p class="text-sm text-slate">Flexible coverage for focused tasks and extras.</p>
+                  </div>
+                  <p class="font-display text-2xl font-extrabold tracking-[-0.04em] text-ink">from $30/hr</p>
+                </div>
+              </div>
+              <p class="mt-6 text-sm leading-6 text-slate">
+                Final quotes depend on access, actual condition, parking, square footage, and extras such as appliances, interior windows, or cabinet interiors.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 text-sm text-slate">
+              <span class="rounded-full bg-white px-4 py-2 shadow-soft">Friendly &amp; reliable crews</span>
+              <span class="rounded-full bg-white px-4 py-2 shadow-soft">Flexible scheduling</span>
+              <span class="rounded-full bg-white px-4 py-2 shadow-soft">Satisfaction guaranteed</span>
+            </div>
+          </div>
+
+          <div class="reveal rounded-[2.4rem] bg-white p-5 shadow-float md:p-7" style="--delay: 140ms;">
+            <div class="grid gap-5 xl:grid-cols-[0.92fr_1.08fr]">
+              <section id="calculator" class="rounded-[1.8rem] bg-mist p-5 md:p-7">
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <p class="eyebrow text-marine">Cost Calculator</p>
+                    <h3 class="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em] text-ink">Build your estimate</h3>
+                  </div>
+                  <span class="rounded-full bg-white px-3 py-2 text-xs font-semibold text-ink shadow-soft">CAD pricing</span>
+                </div>
+
+                <form id="calculator-form" class="mt-6 space-y-5">
+                  <div class="grid gap-4 sm:grid-cols-2">
+                    <label class="block sm:col-span-2">
+                      <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-slate">Cleaning type</span>
+                      <select id="serviceType" class="field">
+                        <option value="regular">Regular cleaning</option>
+                        <option value="deep" selected>Deep cleaning</option>
+                        <option value="move">Move in / move out</option>
+                        <option value="post">Post-construction cleaning</option>
+                        <option value="office">Office cleaning</option>
+                      </select>
+                    </label>
+                    <label class="block">
+                      <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-slate">Property type</span>
+                      <select id="propertyType" class="field">
+                        <option value="condo">Condo / apartment</option>
+                        <option value="house" selected>House / detached</option>
+                        <option value="townhouse">Townhouse</option>
+                        <option value="office">Office / commercial</option>
+                      </select>
+                    </label>
+                    <label class="block">
+                      <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-slate">Condition level</span>
+                      <select id="conditionLevel" class="field">
+                        <option value="light">Light upkeep</option>
+                        <option value="standard" selected>Standard lived-in</option>
+                        <option value="heavy">Heavy detail needed</option>
+                      </select>
+                    </label>
+                    <label class="block">
+                      <span id="bedroomLabel" class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-slate">Bedrooms</span>
+                      <input id="bedrooms" class="field" type="number" min="0" max="8" value="3">
+                    </label>
+                    <label class="block">
+                      <span id="bathroomLabel" class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-slate">Bathrooms</span>
+                      <input id="bathrooms" class="field" type="number" min="1" max="8" value="2">
+                    </label>
+                    <label class="block sm:col-span-2">
+                      <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-slate">Square footage</span>
+                      <input id="squareFootage" class="field" type="number" min="400" max="8000" step="50" value="1400">
+                    </label>
+                  </div>
+
+                  <div>
+                    <span class="mb-3 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-slate">Extras</span>
+                    <div class="grid gap-3 sm:grid-cols-2">
+                      <label class="chip">
+                        <input class="sr-only extra-input" type="checkbox" value="fridge">
+                        <span class="block rounded-[1.1rem] bg-white px-4 py-3 text-sm font-medium text-slate transition-all duration-200 hover:-translate-y-0.5 hover:text-ink">Inside fridge</span>
+                      </label>
+                      <label class="chip">
+                        <input class="sr-only extra-input" type="checkbox" value="oven">
+                        <span class="block rounded-[1.1rem] bg-white px-4 py-3 text-sm font-medium text-slate transition-all duration-200 hover:-translate-y-0.5 hover:text-ink">Inside oven</span>
+                      </label>
+                      <label class="chip">
+                        <input class="sr-only extra-input" type="checkbox" value="windows">
+                        <span class="block rounded-[1.1rem] bg-white px-4 py-3 text-sm font-medium text-slate transition-all duration-200 hover:-translate-y-0.5 hover:text-ink">Interior windows</span>
+                      </label>
+                      <label class="chip">
+                        <input class="sr-only extra-input" type="checkbox" value="cabinets">
+                        <span class="block rounded-[1.1rem] bg-white px-4 py-3 text-sm font-medium text-slate transition-all duration-200 hover:-translate-y-0.5 hover:text-ink">Inside cabinets</span>
+                      </label>
+                      <label class="chip">
+                        <input class="sr-only extra-input" type="checkbox" value="laundry">
+                        <span class="block rounded-[1.1rem] bg-white px-4 py-3 text-sm font-medium text-slate transition-all duration-200 hover:-translate-y-0.5 hover:text-ink">Laundry / linen reset</span>
+                      </label>
+                      <label class="chip">
+                        <input class="sr-only extra-input" type="checkbox" value="baseboards">
+                        <span class="block rounded-[1.1rem] bg-white px-4 py-3 text-sm font-medium text-slate transition-all duration-200 hover:-translate-y-0.5 hover:text-ink">Walls &amp; baseboards detail</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="rounded-[1.5rem] bg-ink px-5 py-5 text-white">
+                    <div class="flex items-end justify-between gap-4">
+                      <div>
+                        <p class="eyebrow text-sky/80">Estimated price</p>
+                        <p id="estimatePrice" class="mt-2 font-display text-4xl font-extrabold tracking-[-0.05em]">$350 CAD</p>
+                      </div>
+                      <p id="estimateRange" class="text-right text-sm leading-6 text-white/70">Range $315 to $395</p>
+                    </div>
+                    <div class="mt-5 grid gap-2 text-sm text-white/75">
+                      <p id="estimateBreakdown">Deep clean + house + 3 bedrooms + 2 bathrooms + standard condition</p>
+                      <p id="estimateExtras">No extras added yet.</p>
+                    </div>
+                    <button
+                      id="requestQuoteButton"
+                      type="button"
+                      class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink transition-transform duration-200 hover:-translate-y-0.5"
+                    >
+                      Request Exact Quote
+                    </button>
+                  </div>
+                </form>
+              </section>
+
+              <section class="rounded-[1.8rem] bg-ink p-5 text-white md:p-7">
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <p class="eyebrow text-sky/90">Lead Form</p>
+                    <h3 class="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em]">Send your request</h3>
+                  </div>
+                  <span class="rounded-full bg-white/10 px-3 py-2 text-xs font-semibold text-white/78 ring-1 ring-white/15">
+                    Same-day / next-day available
+                  </span>
+                </div>
+                <p class="mt-4 max-w-xl text-sm leading-6 text-white/72">
+                  Name, contact, service type, area, date, and property details go straight into the booking conversation so the estimate can move faster.
+                </p>
+                <form id="quoteForm" class="mt-6 grid gap-4 sm:grid-cols-2">
+                  <label class="block">
+                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Name</span>
+                    <input class="field field-dark" name="name" type="text" placeholder="Your full name" required>
+                  </label>
+                  <label class="block">
+                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Phone</span>
+                    <input class="field field-dark" name="phone" type="tel" placeholder="Best number for call or text" required>
+                  </label>
+                  <label class="block sm:col-span-2">
+                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Email</span>
+                    <input class="field field-dark" name="email" type="email" placeholder="Email address" required>
+                  </label>
+                  <label class="block">
+                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Service type</span>
+                    <select id="leadServiceType" class="field field-dark" name="service">
+                      <option>Regular cleaning</option>
+                      <option selected>Deep cleaning</option>
+                      <option>Move in / move out</option>
+                      <option>Post-construction cleaning</option>
+                      <option>Office cleaning</option>
+                    </select>
+                  </label>
+                  <label class="block">
+                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Area / address</span>
+                    <input class="field field-dark" name="area" type="text" placeholder="Toronto, North York, Etobicoke..." required>
+                  </label>
+                  <label class="block">
+                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Preferred date</span>
+                    <input class="field field-dark" name="date" type="date" required>
+                  </label>
+                  <label class="block">
+                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Property type</span>
+                    <select id="leadPropertyType" class="field field-dark" name="property">
+                      <option>Condo / apartment</option>
+                      <option selected>House / detached</option>
+                      <option>Townhouse</option>
+                      <option>Office / commercial</option>
+                    </select>
+                  </label>
+                  <label class="block sm:col-span-2">
+                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Optional message</span>
+                    <textarea
+                      id="leadMessage"
+                      class="field field-dark min-h-[140px] resize-y"
+                      name="message"
+                      placeholder="Anything useful: parking, access, pets, priority rooms, or details from the calculator."
+                    ></textarea>
+                  </label>
+                  <div class="sm:col-span-2">
+                    <button
+                      type="submit"
+                      class="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-4 text-sm font-semibold text-ink transition-transform duration-200 hover:-translate-y-0.5"
+                    >
+                      Request My Free Estimate
+                    </button>
+                    <p id="formStatus" class="mt-3 text-sm leading-6 text-white/70" aria-live="polite">
+                      Prefer speed? Call or text <a href="tel:4165550123" class="font-semibold text-white">+1 (416) 555-0123</a> with your address and a few photos.
+                    </p>
+                  </div>
+                </form>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="bg-mist py-20 md:py-24">
+      <div class="section-pad">
+        <div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.78fr_1.22fr]">
+          <div class="reveal max-w-lg" style="--delay: 40ms;">
+            <p class="eyebrow text-marine">Services</p>
+            <h2 class="mt-3 font-display text-4xl font-extrabold leading-[0.95] tracking-[-0.05em] text-ink md:text-5xl">
+              Cleaning programs shaped around how Toronto actually lives.
+            </h2>
+            <p class="mt-6 text-base leading-7 text-slate md:text-lg">
+              Condos need speed and coordination. Family homes need consistency. Move-outs need detail under pressure. Offices need dependable arrival windows. The service mix follows that reality.
+            </p>
+            <div class="mt-8 overflow-hidden rounded-[2rem] shadow-soft">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMRjj6j3K1dOO4VKVDwzmDnDhxyAJxhaCrgOgAuqTYKINcS-n4d6TO-ppFFIQiLZHh5fbEGvjf9v0ctkbH7QMqGY9bwANxv4SHaCAb4FLVLONAQKAcR4eevgocfDfHQbjeXTdGpfXT2JH3Nrv5y1fHHKXw7mj9viVLa5htQ7lPli-Ur7f_20tGFEOehjBg5cgfZ6L1extAnyv7YfhDyryeQrCbi197VV1UQyn2OHIVhb-gXPp14yzO_Czswm4RxgaYAknbfoGWwIs"
+                alt="Freshly cleaned bedroom with crisp linens and calm natural light"
+                class="h-[27rem] w-full object-cover"
+              >
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <article class="reveal rounded-[1.8rem] bg-white p-6 shadow-soft transition-transform duration-200 hover:-translate-y-1 md:p-7" style="--delay: 80ms;">
+              <div class="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+                <div class="max-w-2xl">
+                  <p class="eyebrow text-marine">01</p>
+                  <h3 class="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em] text-ink">Regular Cleaning</h3>
+                  <p class="mt-3 text-base leading-7 text-slate">Recurring upkeep for kitchens, bathrooms, floors, visible dust, appliance exteriors, and the rooms clients want kept guest-ready.</p>
+                  <p class="mt-4 text-sm font-semibold text-ink">Best for weekly, bi-weekly, and monthly visits.</p>
+                </div>
+                <p class="font-display text-4xl font-extrabold tracking-[-0.05em] text-ink">from $120</p>
+              </div>
+            </article>
+
+            <article class="reveal rounded-[1.8rem] bg-white p-6 shadow-soft transition-transform duration-200 hover:-translate-y-1 md:p-7" style="--delay: 120ms;">
+              <div class="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+                <div class="max-w-2xl">
+                  <p class="eyebrow text-marine">02</p>
+                  <h3 class="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em] text-ink">Deep Cleaning</h3>
+                  <p class="mt-3 text-base leading-7 text-slate">A detailed reset for homes that need more than upkeep: baseboards, buildup, corners, appliance faces, high-touch surfaces, and a stronger room-by-room finish.</p>
+                  <p class="mt-4 text-sm font-semibold text-ink">Best before guests, after long gaps, or as a first visit.</p>
+                </div>
+                <p class="font-display text-4xl font-extrabold tracking-[-0.05em] text-ink">from $200</p>
+              </div>
+            </article>
+
+            <article class="reveal rounded-[1.8rem] bg-white p-6 shadow-soft transition-transform duration-200 hover:-translate-y-1 md:p-7" style="--delay: 160ms;">
+              <div class="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+                <div class="max-w-2xl">
+                  <p class="eyebrow text-marine">03</p>
+                  <h3 class="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em] text-ink">Move In / Move Out</h3>
+                  <p class="mt-3 text-base leading-7 text-slate">Vacant-unit detailing for handovers, leases, and fresh starts, with attention to cabinet interiors, appliances, bathrooms, floors, and edges that show in final inspections.</p>
+                  <p class="mt-4 text-sm font-semibold text-ink">Best for condos, rentals, and closing-day transitions.</p>
+                </div>
+                <p class="font-display text-4xl font-extrabold tracking-[-0.05em] text-ink">from $250</p>
+              </div>
+            </article>
+
+            <article class="reveal rounded-[1.8rem] bg-white p-6 shadow-soft transition-transform duration-200 hover:-translate-y-1 md:p-7" style="--delay: 200ms;">
+              <div class="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+                <div class="max-w-2xl">
+                  <p class="eyebrow text-marine">04</p>
+                  <h3 class="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em] text-ink">Post-Construction Cleaning</h3>
+                  <p class="mt-3 text-base leading-7 text-slate">Fine dust, renovation residue, floors, ledges, trim, and fixtures cleaned down so the work reads finished instead of just completed.</p>
+                  <p class="mt-4 text-sm font-semibold text-ink">Best after painting, flooring, millwork, or full renos.</p>
+                </div>
+                <p class="font-display text-4xl font-extrabold tracking-[-0.05em] text-ink">quote</p>
+              </div>
+            </article>
+
+            <article class="reveal rounded-[1.8rem] bg-white p-6 shadow-soft transition-transform duration-200 hover:-translate-y-1 md:p-7" style="--delay: 240ms;">
+              <div class="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+                <div class="max-w-2xl">
+                  <p class="eyebrow text-marine">05</p>
+                  <h3 class="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em] text-ink">Office Cleaning</h3>
+                  <p class="mt-3 text-base leading-7 text-slate">Desks, washrooms, kitchens, floors, touch points, boardrooms, and shared areas kept polished for teams and clients without disrupting the workday.</p>
+                  <p class="mt-4 text-sm font-semibold text-ink">Best for boutique offices, clinics, studios, and shared workspaces.</p>
+                </div>
+                <p class="font-display text-4xl font-extrabold tracking-[-0.05em] text-ink">from $30/hr</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-we-clean" class="py-20 md:py-24">
+      <div class="section-pad">
+        <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1.12fr_0.88fr]">
+          <div class="reveal grid gap-4 sm:grid-cols-2" style="--delay: 40ms;">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoLUothvOg3jX3kBI1Cttf28h9Wv_ByHh68ihaXif8EalXjLaSVO9vZVDH8iCK_wmlrzl8wsWQV62TESU36rK4IkEUNw6izGCEnWWqBXzP0pCWbupcrB8SWdO7KgPdlEs-x2b5OHbE1U6mc9hqr8SDqjk0l8sQwPKqKftvy2oIZekPx1AsKh2ePyIcQRRvqy5LsEcNAvaynbnNheZv_nlT2U63eT7JPC6sIYzT06Xz0v__Kka9jhgf8jLyjxLeqWRtbVPjrIwxBeg"
+              alt="Sparkling clean kitchen with marble counters and polished appliances"
+              class="h-72 w-full rounded-[1.7rem] object-cover sm:translate-y-10"
+            >
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzqPXsaq2yNWjcpkSFGCoegJI5BXsds3Jg2nHGhfsJKi5-5YFV7cktnHM3G3dPycYEFsyymy4EcT2oeu-QzBzdBkMy22qEHK-DWHGqNp_7C8wsc7-sHdPIhyWq3cREu0R1FGQ0J8yRwyBQTq3I3HMg9IU61Wo33diXb7laQkdOCnLkIc4dMLTo7g68MlN0gvs2KL7SyTW-VRnKj3BkyApECkEYtDJ4d-aMHCjpuZP_1LXXq4nPEU7Pgu9HXWA4452SiFXVxxp0MCo"
+              alt="Spotless bathroom with polished tile and glass"
+              class="h-72 w-full rounded-[1.7rem] object-cover"
+            >
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgPa5Op_RbK4ofTqLUkvpUJ599picY3fPz645Y3nUeWXkvw2qT_CNpzW5ZBoQvlJAYtjrvD0UFJP-jxtnrJWINn3i0DAmPoG5DeXABoWL_PxV6RSeQozAZ_XbXLAIjjtULHi-CZuBz62E6RA9uJC6WKH-j4a3CWjbsnPPYNalqvsrgUP0mVI6VNq78Ij6FGVMuRDMfasANx9tnRSw6lm8i_bt9IM2ielxtrJiTgZz5wopWMfixk8lf6FJW72Oo-aneU4IZXMFsImk"
+              alt="Appliance being polished for a streak-free finish"
+              class="h-72 w-full rounded-[1.7rem] object-cover"
+            >
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSwqY1VSz5LfU-oT0zR9bMkTbiXwaBw-KdlWfRjZLCV9wpbtCb6SHvC8XzU_ETVITNe-4nfmgl9Gv07UN3GDferE8SNqnpUf2AA8shwqFPz-LAzGA9_glHZ2TXaVIWP5RZTs7ZGTJOH0AgG-yd5LwRyga-DOJwLAqF1rK5l6JszVfkQVH8z62q8AIZZEFxIdykungIPSmTzy65uc4IXHEZhDn3jHfBnCjQQwJwuI98teGjp-Wj69i3k2FeKkJ6GreHqGU8iCiep5w"
+              alt="Clean hardwood floors reflecting natural light"
+              class="h-72 w-full rounded-[1.7rem] object-cover sm:translate-y-10"
+            >
+          </div>
+
+          <div class="reveal lg:pt-14" style="--delay: 120ms;">
+            <p class="eyebrow text-marine">What We Clean</p>
+            <h2 class="mt-3 font-display text-4xl font-extrabold leading-[0.95] tracking-[-0.05em] text-ink md:text-5xl">
+              The surfaces clients notice first, plus the details they usually forget to mention.
+            </h2>
+            <p class="mt-6 max-w-xl text-base leading-7 text-slate md:text-lg">
+              Kitchens, bathrooms, floors, appliances, baseboards, and the edge work that separates a quick tidy from a proper service visit.
+            </p>
+            <div class="mt-8 grid gap-x-8 gap-y-4 text-base leading-7 text-ink sm:grid-cols-2">
+              <div class="flex gap-3">
+                <span class="material-symbols-outlined text-marine">task_alt</span>
+                <p>Kitchens, counters, sinks, and appliance exteriors</p>
+              </div>
+              <div class="flex gap-3">
+                <span class="material-symbols-outlined text-marine">task_alt</span>
+                <p>Bathrooms, tile, mirrors, fixtures, and touch points</p>
+              </div>
+              <div class="flex gap-3">
+                <span class="material-symbols-outlined text-marine">task_alt</span>
+                <p>Floors, vacuuming, mopping, and tracked-in dust</p>
+              </div>
+              <div class="flex gap-3">
+                <span class="material-symbols-outlined text-marine">task_alt</span>
+                <p>Baseboards, ledges, trim, and visible buildup</p>
+              </div>
+              <div class="flex gap-3">
+                <span class="material-symbols-outlined text-marine">task_alt</span>
+                <p>Interior glass and appliances when added as extras</p>
+              </div>
+              <div class="flex gap-3">
+                <span class="material-symbols-outlined text-marine">task_alt</span>
+                <p>Entryways, common areas, bedrooms, and office zones</p>
+              </div>
+            </div>
+            <div class="mt-10 rounded-[1.8rem] bg-mist p-6 shadow-soft">
+              <p class="eyebrow text-marine">Good Fit</p>
+              <p class="mt-3 text-lg font-semibold text-ink">Best for clients who want clear communication, visible detail, and realistic arrival windows instead of vague booking promises.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="bg-ink py-20 text-white md:py-24">
+      <div class="section-pad">
+        <div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.86fr_1.14fr]">
+          <div class="reveal max-w-xl" style="--delay: 40ms;">
+            <p class="eyebrow text-sky/90">Pricing</p>
+            <h2 class="mt-3 font-display text-4xl font-extrabold leading-[0.95] tracking-[-0.05em] md:text-5xl">
+              Clear starting rates that are easy to scan.
+            </h2>
+            <p class="mt-6 text-base leading-7 text-white/72 md:text-lg">
+              Pricing stays readable on purpose. The calculator handles size, condition, and extras so clients can understand why their estimate moves.
+            </p>
+            <div class="mt-8 rounded-[1.8rem] bg-white/8 p-6 backdrop-blur">
+              <p class="text-sm leading-7 text-white/72">
+                Same-day and next-day appointments are available when route capacity allows. Post-construction and larger office jobs are quoted after scope review.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#calculator" class="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink">
+                  Open Calculator
+                </a>
+                <a href="tel:4165550123" class="inline-flex items-center rounded-full bg-white/10 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/16">
+                  Call or Text Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="reveal rounded-[1.8rem] bg-white/8 px-6 py-6 backdrop-blur md:px-7" style="--delay: 80ms;">
+              <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <p class="font-display text-3xl font-bold tracking-[-0.04em]">Regular cleaning</p>
+                  <p class="mt-2 max-w-xl text-sm leading-6 text-white/72">Routine kitchens, bathrooms, dusting, floors, appliance exteriors, and surface resets.</p>
+                </div>
+                <p class="font-display text-4xl font-extrabold tracking-[-0.05em]">from $120</p>
+              </div>
+            </div>
+            <div class="reveal rounded-[1.8rem] bg-white/8 px-6 py-6 backdrop-blur md:px-7" style="--delay: 120ms;">
+              <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <p class="font-display text-3xl font-bold tracking-[-0.04em]">Deep cleaning</p>
+                  <p class="mt-2 max-w-xl text-sm leading-6 text-white/72">Heavier detail for buildup, neglected zones, edges, and rooms that need a full reset.</p>
+                </div>
+                <p class="font-display text-4xl font-extrabold tracking-[-0.05em]">from $200</p>
+              </div>
+            </div>
+            <div class="reveal rounded-[1.8rem] bg-white/8 px-6 py-6 backdrop-blur md:px-7" style="--delay: 160ms;">
+              <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <p class="font-display text-3xl font-bold tracking-[-0.04em]">Move out cleaning</p>
+                  <p class="mt-2 max-w-xl text-sm leading-6 text-white/72">Vacant-unit cleaning for handover, landlord turnover, listing prep, and final walkthroughs.</p>
+                </div>
+                <p class="font-display text-4xl font-extrabold tracking-[-0.05em]">from $250</p>
+              </div>
+            </div>
+            <div class="reveal rounded-[1.8rem] bg-white/8 px-6 py-6 backdrop-blur md:px-7" style="--delay: 200ms;">
+              <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <p class="font-display text-3xl font-bold tracking-[-0.04em]">Hourly custom work</p>
+                  <p class="mt-2 max-w-xl text-sm leading-6 text-white/72">Focused appliance, turnover, or office tasks for clients who need targeted help.</p>
+                </div>
+                <p class="font-display text-4xl font-extrabold tracking-[-0.05em]">from $30/hr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="py-20 md:py-24">
+      <div class="section-pad">
+        <div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+          <div class="reveal overflow-hidden rounded-[2.25rem] shadow-float" style="--delay: 40ms;">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvuAUVgE7iJIXMZQMnd-Ol2Kl1t3lj4wQPnxIWd1_KHqCX6JY58S2juGoDWb-p5kfApmVyed-07KXf13Agn4Y32XNPMLQfCAZUHRS6i2rQGp632ZG2IUTLDjw3E0x08coVHk2ZSDfunCV-yPu33Z_cwCdTfgBpAxhzb2BhU27ULs45p2bnxm6DcEuE0UKqNUPdCJc0r1BAjsDqzszpLkreLoHaPMDgYr6Utzt8s0NMIB_e9GD2ETpjom-su8dHWc1ZxViN-4myUSc"
+              alt="Professional cleaner prepared for a detail-oriented cleaning appointment"
+              class="h-full min-h-[34rem] w-full object-cover"
+            >
+          </div>
+
+          <div class="reveal" style="--delay: 120ms;">
+            <p class="eyebrow text-marine">Why Choose Us</p>
+            <h2 class="mt-3 max-w-2xl font-display text-4xl font-extrabold leading-[0.95] tracking-[-0.05em] text-ink md:text-5xl">
+              Premium trust for a local service business starts with discipline, not decoration.
+            </h2>
+            <div class="mt-8 space-y-8">
+              <div class="grid gap-3 md:grid-cols-[auto_1fr]">
+                <p class="font-display text-3xl font-extrabold tracking-[-0.05em] text-marine">01</p>
+                <div>
+                  <p class="text-xl font-semibold text-ink">Attention to detail</p>
+                  <p class="mt-2 max-w-xl text-base leading-7 text-slate">We clean the obvious zones clients expect, then keep pushing into edges, buildup, and finish quality so the space actually feels reset.</p>
+                </div>
+              </div>
+              <div class="grid gap-3 md:grid-cols-[auto_1fr]">
+                <p class="font-display text-3xl font-extrabold tracking-[-0.05em] text-marine">02</p>
+                <div>
+                  <p class="text-xl font-semibold text-ink">Friendly and reliable service</p>
+                  <p class="mt-2 max-w-xl text-base leading-7 text-slate">Clear arrival windows, straightforward communication, and crews who treat occupied homes and active offices with care.</p>
+                </div>
+              </div>
+              <div class="grid gap-3 md:grid-cols-[auto_1fr]">
+                <p class="font-display text-3xl font-extrabold tracking-[-0.05em] text-marine">03</p>
+                <div>
+                  <p class="text-xl font-semibold text-ink">Flexible scheduling</p>
+                  <p class="mt-2 max-w-xl text-base leading-7 text-slate">Morning, daytime, and turnover-friendly bookings with same-day and next-day appointments when the route allows.</p>
+                </div>
+              </div>
+              <div class="grid gap-3 md:grid-cols-[auto_1fr]">
+                <p class="font-display text-3xl font-extrabold tracking-[-0.05em] text-marine">04</p>
+                <div>
+                  <p class="text-xl font-semibold text-ink">Satisfaction guaranteed</p>
+                  <p class="mt-2 max-w-xl text-base leading-7 text-slate">If something misses the mark, we address it quickly. That promise matters more than a polished marketing line.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="areas" class="bg-mist py-20 md:py-24">
+      <div class="section-pad">
+        <div class="mx-auto max-w-7xl">
+          <div class="reveal max-w-2xl" style="--delay: 40ms;">
+            <p class="eyebrow text-marine">Areas We Serve</p>
+            <h2 class="mt-3 font-display text-4xl font-extrabold leading-[0.95] tracking-[-0.05em] text-ink md:text-5xl">
+              Toronto first, with flexible GTA coverage where the route makes sense.
+            </h2>
+          </div>
+
+          <div class="mt-10 grid gap-6 lg:grid-cols-[1.02fr_0.98fr]">
+            <div class="reveal relative overflow-hidden rounded-[2.25rem] bg-ink p-6 text-white shadow-float md:p-8" style="--delay: 90ms;">
+              <div class="map-grid absolute inset-0 opacity-30"></div>
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9U0iCgxzEPmH4cklUlrf0k6aniNKu6QQ0imamP-dKWHqxiz1RXWRIUnxowL7Doe-JfaRLMfYrShtSzHyvWFMPX96xcXR7ZgMSsSv9Tm-4uiYIzaqnut1fuFaLXFNI7xdLYfj3NbyTRbRp8hTsTNzkGSWsgxPlKVE2_bcAO1_3qwnLpMv-o7wLsHgDSVcht6aY1tZ2aT4q0Y8UjDoAYL8iqn_ApOdI0Kiq_6wuw5bNxufXtFT-uUdYmHomSJA9nSBXpnHjf5xJIuc"
+                alt="Map view representing service coverage around Toronto and the GTA"
+                class="absolute inset-0 h-full w-full object-cover opacity-30"
+              >
+              <div class="absolute inset-0 bg-gradient-to-br from-ink/96 via-ink/84 to-marine/76"></div>
+              <div class="relative flex h-full min-h-[26rem] flex-col justify-between">
+                <div>
+                  <p class="eyebrow text-sky/85">Route-ready coverage</p>
+                  <p class="mt-4 max-w-md text-base leading-7 text-white/74">
+                    Condo bookings, family homes, and office calls scheduled with Toronto density in mind, plus GTA jobs when timing and travel align.
+                  </p>
+                </div>
+                <div class="grid gap-3 text-sm font-semibold sm:grid-cols-2">
+                  <span class="rounded-full bg-white/10 px-4 py-3 backdrop-blur">Toronto</span>
+                  <span class="rounded-full bg-white/10 px-4 py-3 backdrop-blur">North York</span>
+                  <span class="rounded-full bg-white/10 px-4 py-3 backdrop-blur">Etobicoke</span>
+                  <span class="rounded-full bg-white/10 px-4 py-3 backdrop-blur">Scarborough</span>
+                  <span class="rounded-full bg-white/10 px-4 py-3 backdrop-blur">Select GTA appointments</span>
+                  <span class="rounded-full bg-white/10 px-4 py-3 backdrop-blur">Same-day when available</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal rounded-[2.25rem] bg-white p-6 shadow-soft md:p-8" style="--delay: 140ms;">
+              <p class="eyebrow text-marine">Local credibility</p>
+              <div class="mt-5 space-y-6 text-base leading-7 text-slate">
+                <p>
+                  Toronto condos need smoother access and tighter windows. North York and Scarborough homes often need larger square-footage resets. Etobicoke turnovers and office cleans need dependable timing. The page reflects those use cases instead of generic nationwide copy.
+                </p>
+                <p>
+                  If your address is outside the core service band, the quote form still works: submit the area, preferred date, and service type, and we can confirm whether the route fits.
+                </p>
+              </div>
+              <div class="mt-8 grid gap-3 text-sm text-ink sm:grid-cols-2">
+                <div class="rounded-[1.4rem] bg-mist px-4 py-4">
+                  <p class="font-semibold">Downtown &amp; condo-heavy routes</p>
+                  <p class="mt-1 text-slate">Toronto core, Harbourfront, Liberty Village, Midtown.</p>
+                </div>
+                <div class="rounded-[1.4rem] bg-mist px-4 py-4">
+                  <p class="font-semibold">Household coverage</p>
+                  <p class="mt-1 text-slate">North York, Etobicoke, Scarborough, and nearby GTA zones.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="py-20 md:py-24">
+      <div class="section-pad">
+        <div class="mx-auto max-w-7xl">
+          <div class="reveal max-w-2xl" style="--delay: 40ms;">
+            <p class="eyebrow text-marine">Reviews</p>
+            <h2 class="mt-3 font-display text-4xl font-extrabold leading-[0.95] tracking-[-0.05em] text-ink md:text-5xl">
+              Believable proof from real local use cases.
+            </h2>
+          </div>
+
+          <div class="mt-10 grid gap-5 lg:grid-cols-[1.08fr_0.92fr]">
+            <blockquote class="reveal rounded-[2.25rem] bg-ink p-8 text-white shadow-float md:p-10" style="--delay: 90ms;">
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky/85">Deep cleaning - Downtown Toronto</p>
+              <p class="mt-6 max-w-2xl font-display text-[clamp(2rem,4vw,3.35rem)] font-bold leading-[1.02] tracking-[-0.05em]">
+                "The estimate matched the scope, the team showed up when promised, and the condo finally looked move-in ready again."
+              </p>
+              <footer class="mt-8 text-sm text-white/72">
+                <p class="font-semibold text-white">Sarah H.</p>
+                <p>Toronto condo owner</p>
+              </footer>
+            </blockquote>
+
+            <div class="space-y-5">
+              <blockquote class="reveal rounded-[2rem] bg-mist p-6 shadow-soft md:p-8" style="--delay: 130ms;">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-marine">Office cleaning - North York</p>
+                <p class="mt-4 text-xl leading-8 text-ink">
+                  "Professional, easy to coordinate, and consistent enough that we kept the recurring schedule."
+                </p>
+                <footer class="mt-5 text-sm text-slate">
+                  <p class="font-semibold text-ink">Michael R.</p>
+                  <p>Office manager, North York</p>
+                </footer>
+              </blockquote>
+              <blockquote class="reveal rounded-[2rem] bg-white p-6 shadow-soft md:p-8" style="--delay: 170ms;">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-marine">Move-out cleaning - Etobicoke</p>
+                <p class="mt-4 text-xl leading-8 text-ink">
+                  "They handled the appliances, bathrooms, and baseboards properly. It felt like a handover clean, not a rushed once-over."
+                </p>
+                <footer class="mt-5 text-sm text-slate">
+                  <p class="font-semibold text-ink">Emily L.</p>
+                  <p>Tenant move-out, Etobicoke</p>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-ink py-20 text-white md:py-24">
+      <div class="section-pad">
+        <div class="mx-auto max-w-7xl rounded-[2.4rem] bg-white/8 px-6 py-10 backdrop-blur md:px-10 md:py-12">
+          <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+            <div class="reveal" style="--delay: 40ms;">
+              <p class="eyebrow text-sky/90">Final CTA</p>
+              <h2 class="mt-3 max-w-3xl font-display text-4xl font-extrabold leading-[0.95] tracking-[-0.05em] md:text-5xl">
+                Ready for a cleaner kitchen, bathroom, floor plan, or turnover?
+              </h2>
+              <p class="mt-6 max-w-2xl text-base leading-7 text-white/72 md:text-lg">
+                Use the estimate desk, call or text now, or send the form with your area and preferred date. Toronto and GTA bookings move fastest when the scope is clear from the start.
+              </p>
+            </div>
+            <div class="reveal flex flex-col gap-3 sm:flex-row lg:justify-end" style="--delay: 120ms;">
+              <a
+                href="#lead-form"
+                class="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 text-sm font-semibold text-ink"
+              >
+                Get Free Estimate
+              </a>
+              <a
+                href="tel:4165550123"
+                class="inline-flex items-center justify-center rounded-full bg-white/10 px-6 py-4 text-sm font-semibold text-white ring-1 ring-white/16"
+              >
+                Call or Text Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#041729] text-white">
+    <div class="section-pad">
+      <div class="mx-auto grid max-w-7xl gap-10 py-14 md:grid-cols-4">
+        <div class="md:col-span-2">
+          <p class="font-display text-3xl font-extrabold tracking-[-0.05em]">Pristine Cleaning Co.</p>
+          <p class="mt-4 max-w-md text-sm leading-7 text-white/65">
+            Premium cleaning services for Toronto, North York, Etobicoke, Scarborough, and GTA appointments that fit the route.
+          </p>
+        </div>
+        <div>
+          <p class="eyebrow text-sky/85">Contact</p>
+          <div class="mt-4 space-y-3 text-sm text-white/72">
+            <p><a href="tel:4165550123" class="transition-colors hover:text-white">(416) 555-0123</a></p>
+            <p><a href="mailto:quotes@pristinecleaningco.ca" class="transition-colors hover:text-white">quotes@pristinecleaningco.ca</a></p>
+            <p>Toronto &amp; GTA</p>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow text-sky/85">Core Services</p>
+          <div class="mt-4 space-y-3 text-sm text-white/72">
+            <p>Regular cleaning</p>
+            <p>Deep cleaning</p>
+            <p>Move in / move out</p>
+            <p>Post-construction</p>
+            <p>Office cleaning</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fixed inset-x-4 bottom-4 z-50 md:hidden">
+    <div class="rounded-[1.35rem] bg-white/95 p-2 shadow-float backdrop-blur">
+      <div class="grid grid-cols-2 gap-2">
+        <a href="tel:4165550123" class="inline-flex items-center justify-center rounded-[1rem] bg-mist px-4 py-3 text-sm font-semibold text-ink">
+          Call or Text
+        </a>
+        <a href="#lead-form" class="inline-flex items-center justify-center rounded-[1rem] bg-ink px-4 py-3 text-sm font-semibold text-white">
+          Free Estimate
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const header = document.getElementById("site-header");
+    const observer = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ? null
+      : new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+            }
+          });
+        }, { threshold: 0.16 });
+
+    document.querySelectorAll(".reveal").forEach((element) => {
+      if (observer) {
+        observer.observe(element);
+      } else {
+        element.classList.add("is-visible");
+      }
+    });
+
+    const money = new Intl.NumberFormat("en-CA", {
+      style: "currency",
+      currency: "CAD",
+      maximumFractionDigits: 0
+    });
+
+    const pricing = {
+      serviceBase: {
+        regular: 120,
+        deep: 200,
+        move: 250,
+        post: 320,
+        office: 180
+      },
+      propertyAdjust: {
+        condo: 0,
+        house: 30,
+        townhouse: 18,
+        office: 60
+      },
+      conditionAdjust: {
+        light: 0,
+        standard: 35,
+        heavy: 95
+      },
+      bedroomRate: {
+        regular: 18,
+        deep: 25,
+        move: 28,
+        post: 30,
+        office: 0
+      },
+      bathroomRate: {
+        regular: 22,
+        deep: 32,
+        move: 35,
+        post: 38,
+        office: 12
+      },
+      sqftRate: {
+        regular: 0.055,
+        deep: 0.082,
+        move: 0.092,
+        post: 0.11,
+        office: 0.075
+      },
+      extras: {
+        fridge: { label: "inside fridge", value: 30 },
+        oven: { label: "inside oven", value: 35 },
+        windows: { label: "interior windows", value: 60 },
+        cabinets: { label: "inside cabinets", value: 45 },
+        laundry: { label: "laundry / linen reset", value: 25 },
+        baseboards: { label: "walls & baseboards detail", value: 55 }
+      },
+      labels: {
+        regular: "Regular clean",
+        deep: "Deep clean",
+        move: "Move in / move out",
+        post: "Post-construction",
+        office: "Office cleaning",
+        condo: "condo",
+        house: "house",
+        townhouse: "townhouse",
+        officeProperty: "office",
+        light: "light upkeep",
+        standard: "standard condition",
+        heavy: "heavy detail"
+      }
+    };
+
+    const serviceType = document.getElementById("serviceType");
+    const propertyType = document.getElementById("propertyType");
+    const conditionLevel = document.getElementById("conditionLevel");
+    const bedrooms = document.getElementById("bedrooms");
+    const bathrooms = document.getElementById("bathrooms");
+    const bedroomLabel = document.getElementById("bedroomLabel");
+    const bathroomLabel = document.getElementById("bathroomLabel");
+    const squareFootage = document.getElementById("squareFootage");
+    const extraInputs = Array.from(document.querySelectorAll(".extra-input"));
+    const estimatePrice = document.getElementById("estimatePrice");
+    const estimateRange = document.getElementById("estimateRange");
+    const estimateBreakdown = document.getElementById("estimateBreakdown");
+    const estimateExtras = document.getElementById("estimateExtras");
+    const requestQuoteButton = document.getElementById("requestQuoteButton");
+    const leadServiceType = document.getElementById("leadServiceType");
+    const leadPropertyType = document.getElementById("leadPropertyType");
+    const leadMessage = document.getElementById("leadMessage");
+    const quoteForm = document.getElementById("quoteForm");
+    const formStatus = document.getElementById("formStatus");
+
+    function syncCalculatorLabels() {
+      if (serviceType.value === "office") {
+        propertyType.value = "office";
+      }
+
+      if (propertyType.value === "office") {
+        bedroomLabel.textContent = "Rooms / offices";
+        bathroomLabel.textContent = "Washrooms";
+      } else {
+        bedroomLabel.textContent = "Bedrooms";
+        bathroomLabel.textContent = "Bathrooms";
+      }
+    }
+
+    function updateEstimate() {
+      syncCalculatorLabels();
+      const service = serviceType.value;
+      const property = propertyType.value;
+      const condition = conditionLevel.value;
+      const bedroomCount = Math.max(0, Number.parseInt(bedrooms.value || "0", 10));
+      const bathroomCount = Math.max(1, Number.parseInt(bathrooms.value || "1", 10));
+      const sqft = Math.max(400, Number.parseInt(squareFootage.value || "400", 10));
+      const extraList = extraInputs.filter((input) => input.checked);
+
+      const base = pricing.serviceBase[service];
+      const propertyCharge = pricing.propertyAdjust[property];
+      const conditionCharge = pricing.conditionAdjust[condition];
+      const bedroomCharge = bedroomCount * pricing.bedroomRate[service];
+      const bathroomCharge = bathroomCount * pricing.bathroomRate[service];
+      const sqftCharge = Math.round(sqft * pricing.sqftRate[service]);
+      const extrasCharge = extraList.reduce((total, item) => total + pricing.extras[item.value].value, 0);
+      const total = base + propertyCharge + conditionCharge + bedroomCharge + bathroomCharge + sqftCharge + extrasCharge;
+      const low = Math.round(total * 0.9);
+      const high = Math.round(total * 1.13);
+      const primaryRoomLabel = property === "office" ? "rooms" : "bedrooms";
+      const bathLabel = property === "office" ? "washrooms" : "bathrooms";
+
+      estimatePrice.textContent = money.format(total);
+      estimateRange.textContent = `Range ${money.format(low)} to ${money.format(high)}`;
+      estimateBreakdown.textContent = `${pricing.labels[service]} + ${property === "office" ? pricing.labels.officeProperty : pricing.labels[property]} + ${bedroomCount} ${primaryRoomLabel} + ${bathroomCount} ${bathLabel} + ${pricing.labels[condition]}`;
+      estimateExtras.textContent = extraList.length
+        ? `Extras: ${extraList.map((item) => pricing.extras[item.value].label).join(", ")}.`
+        : "No extras added yet.";
+
+      leadServiceType.value = serviceType.options[serviceType.selectedIndex].text;
+      leadPropertyType.value = propertyType.options[propertyType.selectedIndex].text;
+      requestQuoteButton.dataset.summary = `${estimatePrice.textContent} estimate for ${estimateBreakdown.textContent.toLowerCase()}. ${estimateExtras.textContent}`;
+    }
+
+    [serviceType, propertyType, conditionLevel, bedrooms, bathrooms, squareFootage].forEach((input) => {
+      input.addEventListener("input", updateEstimate);
+      input.addEventListener("change", updateEstimate);
+    });
+
+    extraInputs.forEach((input) => input.addEventListener("change", updateEstimate));
+
+    requestQuoteButton.addEventListener("click", () => {
+      leadMessage.value = `Estimated starting quote: ${requestQuoteButton.dataset.summary}`;
+      formStatus.innerHTML = 'Estimate copied into the message field. Add your address and preferred date, or call <a href="tel:4165550123" class="font-semibold text-white">+1 (416) 555-0123</a>.';
+      document.getElementById("lead-form").scrollIntoView({ behavior: "smooth", block: "start" });
+      const firstFormField = quoteForm.querySelector("input[name='name']");
+      if (firstFormField) {
+        firstFormField.focus({ preventScroll: true });
+      }
+    });
+
+    quoteForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      formStatus.textContent = "Thanks. Your estimate request is staged for follow-up. Call or text +1 (416) 555-0123 if you need a faster response.";
+    });
+
+    updateEstimate();
+
+    function updateHeader() {
+      header.dataset.scrolled = window.scrollY > 12 ? "true" : "false";
+    }
+
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+  </script>
+</body>
+</html>

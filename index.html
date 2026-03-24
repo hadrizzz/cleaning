@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en-CA" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pristine Cleaning Co. | Premium Toronto &amp; GTA Cleaning Services</title>
+  <title>Pristine Cleaning Co. | Toronto, North York &amp; GTA Cleaning Services</title>
   <meta
     name="description"
-    content="Premium home, move-out, office, and post-construction cleaning across Toronto, North York, Etobicoke, Scarborough, and the GTA. Free estimates. Same-day and next-day availability."
+    content="Premium regular, deep, move-in / move-out, post-construction, and office cleaning across Toronto, North York, Etobicoke, Scarborough, and the GTA. Fast estimates and flexible scheduling."
+  >
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#082544">
+  <link rel="canonical" href="https://pristinecleaningco.ca/">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pristine Cleaning Co.">
+  <meta property="og:title" content="Pristine Cleaning Co. | Toronto, North York &amp; GTA Cleaning Services">
+  <meta
+    property="og:description"
+    content="Premium regular, deep, move-in / move-out, post-construction, and office cleaning across Toronto, North York, Etobicoke, Scarborough, and the GTA. Fast estimates and flexible scheduling."
+  >
+  <meta property="og:url" content="https://pristinecleaningco.ca/">
+  <meta
+    property="og:image"
+    content="https://lh3.googleusercontent.com/aida-public/AB6AXuBzo10N6lVNCEfZGe1Y8dQgYji6oVhHiai2mx99axj4Vdr_dpH34qExxdIyXMrb7P_coyA5vO8Yp_puFSqatQsDD-yTwyOBIjrg4kTY3jOivT0E6HqtKYBv9KMRvEWrTrIc5wps8WSzdTW-5kZuW-O0dXAQD8aIuOzPSdotuwsihznV6PyqziYFbx9wOEC1K3tmAJtyEWRh7LltTnevkgFgs7u8YnL-58bfOnxouap2nMksLCauOQxAc80N-3n2bcOMzl9opJBIz44"
+  >
+  <meta property="og:image:alt" content="Premium Toronto cleaning service interior">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pristine Cleaning Co. | Toronto, North York &amp; GTA Cleaning Services">
+  <meta
+    name="twitter:description"
+    content="Premium regular, deep, move-in / move-out, post-construction, and office cleaning across Toronto, North York, Etobicoke, Scarborough, and the GTA. Fast estimates and flexible scheduling."
+  >
+  <meta
+    name="twitter:image"
+    content="https://lh3.googleusercontent.com/aida-public/AB6AXuBzo10N6lVNCEfZGe1Y8dQgYji6oVhHiai2mx99axj4Vdr_dpH34qExxdIyXMrb7P_coyA5vO8Yp_puFSqatQsDD-yTwyOBIjrg4kTY3jOivT0E6HqtKYBv9KMRvEWrTrIc5wps8WSzdTW-5kZuW-O0dXAQD8aIuOzPSdotuwsihznV6PyqziYFbx9wOEC1K3tmAJtyEWRh7LltTnevkgFgs7u8YnL-58bfOnxouap2nMksLCauOQxAc80N-3n2bcOMzl9opJBIz44"
   >
   <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
   <script>
@@ -136,6 +163,81 @@
       box-shadow: inset 0 0 0 1px rgba(8, 37, 68, 0.08);
     }
 
+    .service-toggle {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .service-toggle-light {
+      --service-bg: rgba(255, 255, 255, 0.92);
+      --service-text: #5b6c7d;
+      --service-ring: rgba(8, 37, 68, 0.07);
+      --service-active-bg: #082544;
+      --service-active-text: #ffffff;
+      --service-dot: rgba(29, 92, 134, 0.18);
+      --service-active-dot: #dff4e7;
+      --service-shadow: 0 12px 32px rgba(8, 37, 68, 0.06);
+      --service-active-shadow: 0 20px 45px rgba(8, 37, 68, 0.16);
+    }
+
+    .service-toggle-dark {
+      --service-bg: rgba(255, 255, 255, 0.08);
+      --service-text: rgba(255, 255, 255, 0.78);
+      --service-ring: rgba(255, 255, 255, 0.12);
+      --service-active-bg: #ffffff;
+      --service-active-text: #082544;
+      --service-dot: rgba(255, 255, 255, 0.24);
+      --service-active-dot: #1d5c86;
+      --service-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+      --service-active-shadow: 0 18px 40px rgba(1, 14, 29, 0.34);
+    }
+
+    .service-option {
+      display: inline-flex;
+      min-height: 3.15rem;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+      border: 0;
+      border-radius: 999px;
+      background: var(--service-bg);
+      color: var(--service-text);
+      box-shadow: inset 0 0 0 1px var(--service-ring), var(--service-shadow);
+      padding: 0.85rem 1rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.3;
+      text-align: left;
+      transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease;
+    }
+
+    .service-option:hover,
+    .service-option:focus-visible {
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .service-option[aria-pressed="true"] {
+      background: var(--service-active-bg);
+      color: var(--service-active-text);
+      box-shadow: inset 0 0 0 1px transparent, var(--service-active-shadow);
+    }
+
+    .service-option .service-dot {
+      height: 0.6rem;
+      width: 0.6rem;
+      flex: none;
+      border-radius: 999px;
+      background: var(--service-dot);
+      transition: background-color 180ms ease, transform 180ms ease;
+    }
+
+    .service-option[aria-pressed="true"] .service-dot {
+      background: var(--service-active-dot);
+      transform: scale(1.08);
+    }
+
     .map-grid {
       background-image:
         linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
@@ -176,8 +278,77 @@
       }
     }
   </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://pristinecleaningco.ca/#website",
+          "name": "Pristine Cleaning Co.",
+          "url": "https://pristinecleaningco.ca/",
+          "inLanguage": "en-CA"
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://pristinecleaningco.ca/#business",
+          "name": "Pristine Cleaning Co.",
+          "url": "https://pristinecleaningco.ca/",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBzo10N6lVNCEfZGe1Y8dQgYji6oVhHiai2mx99axj4Vdr_dpH34qExxdIyXMrb7P_coyA5vO8Yp_puFSqatQsDD-yTwyOBIjrg4kTY3jOivT0E6HqtKYBv9KMRvEWrTrIc5wps8WSzdTW-5kZuW-O0dXAQD8aIuOzPSdotuwsihznV6PyqziYFbx9wOEC1K3tmAJtyEWRh7LltTnevkgFgs7u8YnL-58bfOnxouap2nMksLCauOQxAc80N-3n2bcOMzl9opJBIz44",
+          "telephone": "+1-416-555-0123",
+          "email": "quotes@pristinecleaningco.ca",
+          "description": "Premium regular, deep, move-in / move-out, post-construction, and office cleaning across Toronto, North York, Etobicoke, Scarborough, and the GTA.",
+          "priceRange": "$$",
+          "areaServed": [
+            { "@type": "City", "name": "Toronto" },
+            { "@type": "City", "name": "North York" },
+            { "@type": "City", "name": "Etobicoke" },
+            { "@type": "City", "name": "Scarborough" },
+            { "@type": "AdministrativeArea", "name": "Greater Toronto Area" }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Cleaning Services",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": { "@type": "Service", "name": "Regular Cleaning" }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": { "@type": "Service", "name": "Deep Cleaning" }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": { "@type": "Service", "name": "Move In / Move Out" }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": { "@type": "Service", "name": "Post-Construction Cleaning" }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": { "@type": "Service", "name": "Office Cleaning" }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body class="font-sans antialiased selection:bg-marine/20 selection:text-ink">
+  <a
+    href="#main-content"
+    class="sr-only focus:not-sr-only focus:fixed focus:left-6 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-ink focus:px-5 focus:py-3 focus:font-semibold focus:text-white"
+  >
+    Skip to content
+  </a>
   <header
     id="site-header"
     class="fixed inset-x-0 top-0 z-50 transition-all duration-300"
@@ -187,7 +358,7 @@
         <a href="#top" class="font-display text-lg font-extrabold tracking-[-0.04em] text-ink md:text-xl">
           Pristine Cleaning Co.
         </a>
-        <nav class="hidden items-center gap-7 text-sm font-medium text-slate md:flex">
+        <nav aria-label="Primary" class="hidden items-center gap-7 text-sm font-medium text-slate md:flex">
           <a href="#services" class="transition-colors hover:text-ink">Services</a>
           <a href="#pricing" class="transition-colors hover:text-ink">Pricing</a>
           <a href="#calculator" class="transition-colors hover:text-ink">Calculator</a>
@@ -212,7 +383,7 @@
     </div>
   </header>
 
-  <main class="overflow-x-hidden pb-24 md:pb-0">
+  <main id="main-content" class="overflow-x-hidden pb-24 md:pb-0">
     <section id="top" class="relative overflow-hidden bg-ink pt-24 text-white">
       <div class="absolute inset-0">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(127,181,200,0.28),_transparent_40%),radial-gradient(circle_at_bottom_right,_rgba(223,244,231,0.18),_transparent_28%)]"></div>
@@ -294,16 +465,16 @@
       </div>
     </section>
 
-    <section id="lead-form" class="section-pad relative -mt-8 pb-20 pt-10 md:-mt-16 md:pb-24">
+    <section id="lead-form" class="section-pad relative -mt-8 pb-20 pt-10 md:-mt-16 md:pb-24" aria-labelledby="lead-form-title">
       <div class="mx-auto max-w-7xl">
         <div class="grid gap-8 lg:grid-cols-[0.72fr_1.28fr]">
-          <div class="reveal space-y-6 lg:sticky lg:top-28 lg:self-start" style="--delay: 60ms;">
+          <div class="order-2 reveal space-y-6 lg:order-1 lg:sticky lg:top-28 lg:self-start" style="--delay: 60ms;">
             <p class="eyebrow text-marine">Estimate Desk</p>
-            <h2 class="font-display text-4xl font-extrabold leading-[0.95] tracking-[-0.05em] text-ink md:text-5xl">
-              A real quote flow, not a decorative form.
+            <h2 id="lead-form-title" class="font-display text-4xl font-extrabold leading-[0.95] tracking-[-0.05em] text-ink md:text-5xl">
+              A cleaner quote flow with less friction.
             </h2>
             <p class="max-w-md text-base leading-7 text-slate md:text-lg">
-              Use the calculator to get a credible starting estimate, then send the details once. The form captures the exact fields a local cleaning team actually needs to book.
+              Use the calculator for a credible starting range, then leave only the contact details needed to start the reply. Service selection stays optional when you just want a fast callback.
             </p>
             <div class="rounded-[2rem] bg-mist p-6 shadow-soft">
               <div class="space-y-4">
@@ -347,29 +518,51 @@
             </div>
           </div>
 
-          <div class="reveal rounded-[2.4rem] bg-white p-5 shadow-float md:p-7" style="--delay: 140ms;">
-            <div class="grid gap-5 xl:grid-cols-[0.92fr_1.08fr]">
-              <section id="calculator" class="rounded-[1.8rem] bg-mist p-5 md:p-7">
+          <div class="order-1 reveal rounded-[2.4rem] bg-white p-5 shadow-float md:p-7 lg:order-2" style="--delay: 140ms;">
+            <div class="grid gap-5 xl:grid-cols-[0.98fr_1.02fr]">
+              <section id="calculator" class="order-2 rounded-[1.8rem] bg-mist p-5 md:p-7 xl:order-1" aria-labelledby="calculator-title">
                 <div class="flex items-start justify-between gap-4">
                   <div>
                     <p class="eyebrow text-marine">Cost Calculator</p>
-                    <h3 class="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em] text-ink">Build your estimate</h3>
+                    <h3 id="calculator-title" class="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em] text-ink">Build your estimate</h3>
                   </div>
                   <span class="rounded-full bg-white px-3 py-2 text-xs font-semibold text-ink shadow-soft">CAD pricing</span>
                 </div>
 
                 <form id="calculator-form" class="mt-6 space-y-5">
+                  <fieldset>
+                    <legend class="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-slate">Cleaning type</legend>
+                    <div class="mt-3 flex flex-wrap items-center justify-end gap-3">
+                      <span class="rounded-full bg-white px-3 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-slate shadow-soft">
+                        Tap to compare
+                      </span>
+                    </div>
+                    <input id="serviceType" type="hidden" value="deep">
+                    <div class="service-toggle service-toggle-light mt-4" aria-label="Cleaning type selection">
+                      <button type="button" class="service-option" data-calc-service data-value="regular" aria-pressed="false">
+                        <span class="service-dot" aria-hidden="true"></span>
+                        <span>Regular Cleaning</span>
+                      </button>
+                      <button type="button" class="service-option" data-calc-service data-value="deep" aria-pressed="true">
+                        <span class="service-dot" aria-hidden="true"></span>
+                        <span>Deep Cleaning</span>
+                      </button>
+                      <button type="button" class="service-option" data-calc-service data-value="move" aria-pressed="false">
+                        <span class="service-dot" aria-hidden="true"></span>
+                        <span>Move In / Move Out</span>
+                      </button>
+                      <button type="button" class="service-option" data-calc-service data-value="post" aria-pressed="false">
+                        <span class="service-dot" aria-hidden="true"></span>
+                        <span>Post-Construction Cleaning</span>
+                      </button>
+                      <button type="button" class="service-option" data-calc-service data-value="office" aria-pressed="false">
+                        <span class="service-dot" aria-hidden="true"></span>
+                        <span>Office Cleaning</span>
+                      </button>
+                    </div>
+                  </fieldset>
+
                   <div class="grid gap-4 sm:grid-cols-2">
-                    <label class="block sm:col-span-2">
-                      <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-slate">Cleaning type</span>
-                      <select id="serviceType" class="field">
-                        <option value="regular">Regular cleaning</option>
-                        <option value="deep" selected>Deep cleaning</option>
-                        <option value="move">Move in / move out</option>
-                        <option value="post">Post-construction cleaning</option>
-                        <option value="office">Office cleaning</option>
-                      </select>
-                    </label>
                     <label class="block">
                       <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-slate">Property type</span>
                       <select id="propertyType" class="field">
@@ -448,86 +641,123 @@
                       type="button"
                       class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink transition-transform duration-200 hover:-translate-y-0.5"
                     >
-                      Request Exact Quote
+                      Continue With This Estimate
                     </button>
                   </div>
                 </form>
               </section>
 
-              <section class="rounded-[1.8rem] bg-ink p-5 text-white md:p-7">
-                <div class="flex items-start justify-between gap-4">
-                  <div>
-                    <p class="eyebrow text-sky/90">Lead Form</p>
-                    <h3 class="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em]">Send your request</h3>
+              <section
+                class="relative order-1 overflow-hidden rounded-[1.9rem] bg-[linear-gradient(135deg,#082544_0%,#0d3051_56%,#1d5c86_140%)] p-5 text-white md:p-7 xl:order-2"
+                aria-labelledby="quote-form-title"
+              >
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(223,244,231,0.12),_transparent_34%),radial-gradient(circle_at_bottom_left,_rgba(127,181,200,0.16),_transparent_40%)]"></div>
+                <div class="relative">
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <p class="eyebrow text-sky/90">Lead Form</p>
+                      <h3 id="quote-form-title" class="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em]">Request your estimate</h3>
+                    </div>
+                    <span class="rounded-full bg-white/10 px-3 py-2 text-xs font-semibold text-white/78 ring-1 ring-white/15">
+                      Fast reply flow
+                    </span>
                   </div>
-                  <span class="rounded-full bg-white/10 px-3 py-2 text-xs font-semibold text-white/78 ring-1 ring-white/15">
-                    Same-day / next-day available
-                  </span>
+                  <p class="mt-4 max-w-xl text-sm leading-6 text-white/72">
+                    Name, email, and phone do the heavy lifting. Add a service if you already know the scope, or leave it blank and we can confirm in the follow-up.
+                  </p>
+                  <div class="mt-6 rounded-[1.4rem] bg-white/8 px-4 py-4 text-sm leading-6 text-white/74 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08)]">
+                    We confirm service area, timing, and any access notes once we have your contact details.
+                  </div>
+                  <form id="quoteForm" class="mt-6 space-y-5">
+                    <div class="grid gap-4 sm:grid-cols-2">
+                      <label class="block sm:col-span-2">
+                        <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Name</span>
+                        <input
+                          class="field field-dark"
+                          name="name"
+                          type="text"
+                          placeholder="Your full name"
+                          autocomplete="name"
+                          required
+                        >
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Email</span>
+                        <input
+                          class="field field-dark"
+                          name="email"
+                          type="email"
+                          placeholder="Email address"
+                          autocomplete="email"
+                          required
+                        >
+                      </label>
+                      <label class="block">
+                        <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Phone</span>
+                        <input
+                          class="field field-dark"
+                          name="phone"
+                          type="tel"
+                          placeholder="Best number for call or text"
+                          autocomplete="tel"
+                          inputmode="tel"
+                          required
+                        >
+                      </label>
+                    </div>
+
+                    <fieldset>
+                      <legend class="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">
+                        Service
+                        <span class="ml-2 rounded-full bg-white/10 px-2.5 py-1 text-[0.65rem] font-semibold tracking-[0.18em] text-white/62">
+                          Optional
+                        </span>
+                      </legend>
+                      <div class="mt-3 flex flex-wrap items-center justify-end gap-3">
+                        <p id="lead-service-note" class="text-xs text-white/55">Tap once to choose. Tap again to clear.</p>
+                      </div>
+                      <input id="leadServiceType" name="service" type="hidden" value="">
+                      <div
+                        class="service-toggle service-toggle-dark mt-4"
+                        aria-describedby="lead-service-note"
+                        aria-label="Optional service selection"
+                      >
+                        <button type="button" class="service-option" data-lead-service data-value="regular" aria-pressed="false">
+                          <span class="service-dot" aria-hidden="true"></span>
+                          <span>Regular Cleaning</span>
+                        </button>
+                        <button type="button" class="service-option" data-lead-service data-value="deep" aria-pressed="false">
+                          <span class="service-dot" aria-hidden="true"></span>
+                          <span>Deep Cleaning</span>
+                        </button>
+                        <button type="button" class="service-option" data-lead-service data-value="move" aria-pressed="false">
+                          <span class="service-dot" aria-hidden="true"></span>
+                          <span>Move In / Move Out</span>
+                        </button>
+                        <button type="button" class="service-option" data-lead-service data-value="post" aria-pressed="false">
+                          <span class="service-dot" aria-hidden="true"></span>
+                          <span>Post-Construction Cleaning</span>
+                        </button>
+                        <button type="button" class="service-option" data-lead-service data-value="office" aria-pressed="false">
+                          <span class="service-dot" aria-hidden="true"></span>
+                          <span>Office Cleaning</span>
+                        </button>
+                      </div>
+                    </fieldset>
+
+                    <div>
+                      <button
+                        type="submit"
+                        class="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-4 text-sm font-semibold text-ink transition-transform duration-200 hover:-translate-y-0.5"
+                      >
+                        Request My Free Estimate
+                      </button>
+                      <p id="formStatus" class="mt-3 text-sm leading-6 text-white/70" aria-live="polite">
+                        Prefer speed? Call or text <a href="tel:4165550123" class="font-semibold text-white">+1 (416) 555-0123</a> with your postal code and a few photos.
+                      </p>
+                    </div>
+                  </form>
                 </div>
-                <p class="mt-4 max-w-xl text-sm leading-6 text-white/72">
-                  Name, contact, service type, area, date, and property details go straight into the booking conversation so the estimate can move faster.
-                </p>
-                <form id="quoteForm" class="mt-6 grid gap-4 sm:grid-cols-2">
-                  <label class="block">
-                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Name</span>
-                    <input class="field field-dark" name="name" type="text" placeholder="Your full name" required>
-                  </label>
-                  <label class="block">
-                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Phone</span>
-                    <input class="field field-dark" name="phone" type="tel" placeholder="Best number for call or text" required>
-                  </label>
-                  <label class="block sm:col-span-2">
-                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Email</span>
-                    <input class="field field-dark" name="email" type="email" placeholder="Email address" required>
-                  </label>
-                  <label class="block">
-                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Service type</span>
-                    <select id="leadServiceType" class="field field-dark" name="service">
-                      <option>Regular cleaning</option>
-                      <option selected>Deep cleaning</option>
-                      <option>Move in / move out</option>
-                      <option>Post-construction cleaning</option>
-                      <option>Office cleaning</option>
-                    </select>
-                  </label>
-                  <label class="block">
-                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Area / address</span>
-                    <input class="field field-dark" name="area" type="text" placeholder="Toronto, North York, Etobicoke..." required>
-                  </label>
-                  <label class="block">
-                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Preferred date</span>
-                    <input class="field field-dark" name="date" type="date" required>
-                  </label>
-                  <label class="block">
-                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Property type</span>
-                    <select id="leadPropertyType" class="field field-dark" name="property">
-                      <option>Condo / apartment</option>
-                      <option selected>House / detached</option>
-                      <option>Townhouse</option>
-                      <option>Office / commercial</option>
-                    </select>
-                  </label>
-                  <label class="block sm:col-span-2">
-                    <span class="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-white/70">Optional message</span>
-                    <textarea
-                      id="leadMessage"
-                      class="field field-dark min-h-[140px] resize-y"
-                      name="message"
-                      placeholder="Anything useful: parking, access, pets, priority rooms, or details from the calculator."
-                    ></textarea>
-                  </label>
-                  <div class="sm:col-span-2">
-                    <button
-                      type="submit"
-                      class="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-4 text-sm font-semibold text-ink transition-transform duration-200 hover:-translate-y-0.5"
-                    >
-                      Request My Free Estimate
-                    </button>
-                    <p id="formStatus" class="mt-3 text-sm leading-6 text-white/70" aria-live="polite">
-                      Prefer speed? Call or text <a href="tel:4165550123" class="font-semibold text-white">+1 (416) 555-0123</a> with your address and a few photos.
-                    </p>
-                  </div>
-                </form>
               </section>
             </div>
           </div>
@@ -852,7 +1082,7 @@
                   Toronto condos need smoother access and tighter windows. North York and Scarborough homes often need larger square-footage resets. Etobicoke turnovers and office cleans need dependable timing. The page reflects those use cases instead of generic nationwide copy.
                 </p>
                 <p>
-                  If your address is outside the core service band, the quote form still works: submit the area, preferred date, and service type, and we can confirm whether the route fits.
+                  If your address is outside the core service band, the quote form still works: send your contact details and we can confirm whether the route fits in the follow-up.
                 </p>
               </div>
               <div class="mt-8 grid gap-3 text-sm text-ink sm:grid-cols-2">
@@ -930,7 +1160,7 @@
                 Ready for a cleaner kitchen, bathroom, floor plan, or turnover?
               </h2>
               <p class="mt-6 max-w-2xl text-base leading-7 text-white/72 md:text-lg">
-                Use the estimate desk, call or text now, or send the form with your area and preferred date. Toronto and GTA bookings move fastest when the scope is clear from the start.
+                Use the estimate desk, call or text now, or send the form for a fast reply. Toronto and GTA bookings move fastest when the scope is clear from the start.
               </p>
             </div>
             <div class="reveal flex flex-col gap-3 sm:flex-row lg:justify-end" style="--delay: 120ms;">
@@ -1084,10 +1314,18 @@
         light: "light upkeep",
         standard: "standard condition",
         heavy: "heavy detail"
+      },
+      serviceNames: {
+        regular: "Regular Cleaning",
+        deep: "Deep Cleaning",
+        move: "Move In / Move Out",
+        post: "Post-Construction Cleaning",
+        office: "Office Cleaning"
       }
     };
 
     const serviceType = document.getElementById("serviceType");
+    const calculatorServiceButtons = Array.from(document.querySelectorAll("[data-calc-service]"));
     const propertyType = document.getElementById("propertyType");
     const conditionLevel = document.getElementById("conditionLevel");
     const bedrooms = document.getElementById("bedrooms");
@@ -1102,10 +1340,25 @@
     const estimateExtras = document.getElementById("estimateExtras");
     const requestQuoteButton = document.getElementById("requestQuoteButton");
     const leadServiceType = document.getElementById("leadServiceType");
-    const leadPropertyType = document.getElementById("leadPropertyType");
-    const leadMessage = document.getElementById("leadMessage");
+    const leadServiceButtons = Array.from(document.querySelectorAll("[data-lead-service]"));
     const quoteForm = document.getElementById("quoteForm");
     const formStatus = document.getElementById("formStatus");
+
+    function syncServiceButtons(buttons, activeValue) {
+      buttons.forEach((button) => {
+        button.setAttribute("aria-pressed", button.dataset.value === activeValue ? "true" : "false");
+      });
+    }
+
+    function setCalculatorService(nextValue) {
+      serviceType.value = nextValue;
+      syncServiceButtons(calculatorServiceButtons, nextValue);
+    }
+
+    function setLeadService(nextValue) {
+      leadServiceType.value = nextValue;
+      syncServiceButtons(leadServiceButtons, nextValue);
+    }
 
     function syncCalculatorLabels() {
       if (serviceType.value === "office") {
@@ -1151,21 +1404,38 @@
         ? `Extras: ${extraList.map((item) => pricing.extras[item.value].label).join(", ")}.`
         : "No extras added yet.";
 
-      leadServiceType.value = serviceType.options[serviceType.selectedIndex].text;
-      leadPropertyType.value = propertyType.options[propertyType.selectedIndex].text;
       requestQuoteButton.dataset.summary = `${estimatePrice.textContent} estimate for ${estimateBreakdown.textContent.toLowerCase()}. ${estimateExtras.textContent}`;
     }
 
-    [serviceType, propertyType, conditionLevel, bedrooms, bathrooms, squareFootage].forEach((input) => {
+    [propertyType, conditionLevel, bedrooms, bathrooms, squareFootage].forEach((input) => {
       input.addEventListener("input", updateEstimate);
       input.addEventListener("change", updateEstimate);
     });
 
     extraInputs.forEach((input) => input.addEventListener("change", updateEstimate));
 
+    calculatorServiceButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        if (button.dataset.value === serviceType.value) {
+          return;
+        }
+
+        setCalculatorService(button.dataset.value);
+        updateEstimate();
+      });
+    });
+
+    leadServiceButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const nextValue = leadServiceType.value === button.dataset.value ? "" : button.dataset.value;
+        setLeadService(nextValue);
+      });
+    });
+
     requestQuoteButton.addEventListener("click", () => {
-      leadMessage.value = `Estimated starting quote: ${requestQuoteButton.dataset.summary}`;
-      formStatus.innerHTML = 'Estimate copied into the message field. Add your address and preferred date, or call <a href="tel:4165550123" class="font-semibold text-white">+1 (416) 555-0123</a>.';
+      setLeadService(serviceType.value);
+      quoteForm.dataset.estimateSummary = requestQuoteButton.dataset.summary;
+      formStatus.innerHTML = `Estimate aligned with the form. We preselected <span class="font-semibold text-white">${pricing.serviceNames[serviceType.value]}</span>; add your contact details or call <a href="tel:4165550123" class="font-semibold text-white">+1 (416) 555-0123</a>.`;
       document.getElementById("lead-form").scrollIntoView({ behavior: "smooth", block: "start" });
       const firstFormField = quoteForm.querySelector("input[name='name']");
       if (firstFormField) {
@@ -1175,9 +1445,11 @@
 
     quoteForm.addEventListener("submit", (event) => {
       event.preventDefault();
-      formStatus.textContent = "Thanks. Your estimate request is staged for follow-up. Call or text +1 (416) 555-0123 if you need a faster response.";
+      formStatus.textContent = "Thanks. Your estimate request is staged for follow-up. We’ll confirm service area, timing, and scope by phone or email.";
     });
 
+    setCalculatorService(serviceType.value);
+    setLeadService(leadServiceType.value);
     updateEstimate();
 
     function updateHeader() {
